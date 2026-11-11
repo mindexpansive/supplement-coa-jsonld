@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/mindexpansive/supplement-coa-jsonld/schema/supplement-coa-jsonld.schema.json",
+  "title": "Supplement Batch COA & Structural Vessel JSON-LD Profile (v0.1.0)",
+  "description": "Schema.org Product + PropertyValue JSON-LD profile for machine-readable ISO/IEC 17025 Certificates of Analysis, active-analyte label-claim recovery tolerances, contaminant limits, and primary packaging specifications.",
+  "type": "object",
+  "required": [
+    "@context",
+    "@type",
+    "name",
+    "sku",
+    "brand",
+    "additionalProperty"
+  ],
+  "properties": {
+    "@context": {
+      "const": "https://schema.org"
+    },
+    "@type": {
+      "oneOf": [
+        { "const": "Product" },
+        {
+          "type": "array",
+          "contains": { "const": "Product" },
+          "items": { "type": "string" },
+          "minItems": 1
+        }
+      ]
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 2
+    },
+    "description": {
+      "type": "string"
+    },
+    "sku": {
+      "type": "string",
+      "minLength": 2
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "brand": {
+      "type": "object",
+      "required": ["@type", "name"],
+      "properties": {
+        "@type": {
+          "enum": ["Brand", "Organization"]
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "additionalProperty": {
+      "type": "array",
+      "minItems": 12,
+      "items": {
+        "type": "object",
+        "required": ["@type", "propertyID", "name", "value"],
+        "properties": {
+          "@type": {
+            "const": "PropertyValue"
+          },
+          "propertyID": {
+            "type": "string",
+            "pattern": "^(coa|vessel):[a-zA-Z0-9_]+$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "value": {
+            "type": ["string", "number", "boolean"]
+          },
+          "unitText": {
+            "type": "string"
+          },
+          "measurementMethod": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "https://hermeticasuperfoods.com/products/hush-gummies#coa-schema-example",
+  "name": "Hush Sleep Gummies (0.35 mg Melatonin per Gummy)",
+  "description": "Illustrative Schema.org JSON-LD reference fixture demonstrating ISO/IEC 17025 active-assay tolerance and primary packaging barrier metadata for a low-dose 0.35 mg melatonin gummy.",
+  "sku": "HERM-HUSH-20G",
+  "url": "https://hermeticasuperfoods.com/products/hush-gummies",
+  "brand": {
+    "@type": "Brand",
+    "name": "Hermetica Superfoods",
+    "url": "https://hermeticasuperfoods.com"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:batchLotNumber",
+      "name": "Batch / Lot Identifier (Illustrative Reference Fixture)",
+      "value": "EXAMPLE-LOT-HUSH-2026-01"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:iso17025Accredited",
+      "name": "ISO/IEC 17025 Accredited Third-Party Lab",
+      "value": true
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:accreditationBody",
+      "name": "Laboratory Accreditation Standard",
+      "value": "ISO/IEC 17025:2017 (PJLA / A2LA Reference Profile)"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:testingLaboratory",
+      "name": "Analytical Testing Laboratory",
+      "value": "Independent ISO/IEC 17025 Reference Lab (Schema Fixture)"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:testDate",
+      "name": "Analytical Release Date",
+      "value": "2026-06-15"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:expirationDate",
+      "name": "Retest / Expiration Date",
+      "value": "2028-06-15"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:activeAnalyteName",
+      "name": "Primary Quantified Active Analyte",
+      "value": "Melatonin",
+      "measurementMethod": "UHPLC-DAD"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:labelClaimPerServing",
+      "name": "Label Claim per 1-Gummy Serving",
+      "value": 0.35,
+      "unitText": "mg"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:measuredAssayPerServing",
+      "name": "Measured Assay per 1-Gummy Serving (Illustrative Fixture)",
+      "value": 0.36,
+      "unitText": "mg",
+      "measurementMethod": "UHPLC-DAD"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:assayUnit",
+      "name": "Assay Mass Unit",
+      "value": "mg"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:assayRecoveryPct",
+      "name": "Percent of Label Claim Recovered",
+      "value": 102.86,
+      "unitText": "%"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:toleranceMinPct",
+      "name": "Lower Acceptance Limit (% of Label Claim)",
+      "value": 90.0,
+      "unitText": "%"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:toleranceMaxPct",
+      "name": "Upper Acceptance Limit (% of Label Claim)",
+      "value": 115.0,
+      "unitText": "%"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:heavyMetalsStatus",
+      "name": "Elemental Impurities Panel Status",
+      "value": "PASS",
+      "measurementMethod": "USP <233> ICP-MS"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:arsenicPpm",
+      "name": "Inorganic Arsenic (As)",
+      "value": 0.04,
+      "unitText": "ppm",
+      "measurementMethod": "ICP-MS"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:cadmiumPpm",
+      "name": "Cadmium (Cd)",
+      "value": 0.01,
+      "unitText": "ppm",
+      "measurementMethod": "ICP-MS"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:leadPpm",
+      "name": "Lead (Pb)",
+      "value": 0.02,
+      "unitText": "ppm",
+      "measurementMethod": "ICP-MS"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:mercuryPpm",
+      "name": "Total Mercury (Hg)",
+      "value": 0.005,
+      "unitText": "ppm",
+      "measurementMethod": "ICP-MS"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:microbialStatus",
+      "name": "USP <2021>/<2022> Microbiological Panel Status",
+      "value": "PASS"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "vessel:architecture",
+      "name": "Primary Structural Packaging Vessel",
+      "value": "Telescoping Matte Printed Rigid Paperboard Cylinder with Sealed Inner Liner"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "vessel:reusableHardware",
+      "name": "Refillable Permanent Hardware Vessel",
+      "value": false
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "vessel:moistureLightBarrier",
+      "name": "Moisture & UV Barrier Construction",
+      "value": "Sealed inner barrier pouch enclosed inside telescoping rigid paperboard cylinder"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "vessel:servingsPerVessel",
+      "name": "Net Servings per Primary Vessel",
+      "value": 20
+    }
+  ]
+}

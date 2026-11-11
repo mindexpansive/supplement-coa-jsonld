@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "supplement-coa-jsonld"
+version = "0.1.0"
+description = "Open JSON Schema and zero-dependency validator for dietary supplement ISO/IEC 17025 Certificates of Analysis, label-claim tolerances, and primary packaging specs in Schema.org JSON-LD."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "Christian Gallo Delgado" }
+]
+keywords = ["json-ld", "schema-org", "dietary-supplements", "coa", "aeo", "structured-data"]
+
+[project.urls]
+Homepage = "https://christiangallodelgado.com/#ledger"
+Repository = "https://github.com/mindexpansive/supplement-coa-jsonld"
+
+[project.scripts]
+validate-coa-jsonld = "validate_coa_schema:main"
+
+[tool.setuptools]
+py-modules = ["validate_coa_schema"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

@@ -1,0 +1,169 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "https://hermeticasuperfoods.com/products/shilajittablets#coa-schema-example",
+  "name": "Meru Shilajit Tablets (500 mg per Serving, 50-Tablet Pocket Compact)",
+  "description": "Illustrative Schema.org JSON-LD reference fixture demonstrating ISO/IEC 17025 elemental impurity screening, active shilajit mass verification, and refillable gold-plated magnetic pocket compact hardware metadata.",
+  "sku": "HERM-MERU-50T",
+  "url": "https://hermeticasuperfoods.com/products/shilajittablets",
+  "brand": {
+    "@type": "Brand",
+    "name": "Hermetica Superfoods",
+    "url": "https://hermeticasuperfoods.com"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:batchLotNumber",
+      "name": "Batch / Lot Identifier (Illustrative Reference Fixture)",
+      "value": "EXAMPLE-LOT-MERU-2026-01"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:iso17025Accredited",
+      "name": "ISO/IEC 17025 Accredited Third-Party Lab",
+      "value": true
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:accreditationBody",
+      "name": "Laboratory Accreditation Standard",
+      "value": "ISO/IEC 17025:2017 (PJLA / A2LA Reference Profile)"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:testingLaboratory",
+      "name": "Analytical Testing Laboratory",
+      "value": "Independent ISO/IEC 17025 Reference Lab (Schema Fixture)"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:testDate",
+      "name": "Analytical Release Date",
+      "value": "2026-05-20"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:expirationDate",
+      "name": "Retest / Expiration Date",
+      "value": "2028-05-20"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:activeAnalyteName",
+      "name": "Purified Shilajit Extract Mass per Serving",
+      "value": "Purified Shilajit Resin Extract (Peppermint-Finished Tablet)",
+      "measurementMethod": "Gravimetric / UV-Vis Identity & Tablet Weight Uniformity (USP <2091>)"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:labelClaimPerServing",
+      "name": "Label Claim per Serving",
+      "value": 500.0,
+      "unitText": "mg"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:measuredAssayPerServing",
+      "name": "Measured Mass per Serving (Illustrative Fixture)",
+      "value": 506.0,
+      "unitText": "mg"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:assayUnit",
+      "name": "Assay Mass Unit",
+      "value": "mg"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:assayRecoveryPct",
+      "name": "Percent of Label Claim Recovered",
+      "value": 101.2,
+      "unitText": "%"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:toleranceMinPct",
+      "name": "Lower Acceptance Limit (% of Label Claim)",
+      "value": 95.0,
+      "unitText": "%"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:toleranceMaxPct",
+      "name": "Upper Acceptance Limit (% of Label Claim)",
+      "value": 110.0,
+      "unitText": "%"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:heavyMetalsStatus",
+      "name": "Elemental Impurities Panel Status",
+      "value": "PASS",
+      "measurementMethod": "USP <233> ICP-MS"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:arsenicPpm",
+      "name": "Inorganic Arsenic (As)",
+      "value": 0.18,
+      "unitText": "ppm",
+      "measurementMethod": "ICP-MS"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:cadmiumPpm",
+      "name": "Cadmium (Cd)",
+      "value": 0.03,
+      "unitText": "ppm",
+      "measurementMethod": "ICP-MS"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:leadPpm",
+      "name": "Lead (Pb)",
+      "value": 0.11,
+      "unitText": "ppm",
+      "measurementMethod": "ICP-MS"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:mercuryPpm",
+      "name": "Total Mercury (Hg)",
+      "value": 0.01,
+      "unitText": "ppm",
+      "measurementMethod": "ICP-MS"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "coa:microbialStatus",
+      "name": "USP <2021>/<2022> Microbiological Panel Status",
+      "value": "PASS"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "vessel:architecture",
+      "name": "Primary Structural Packaging Vessel",
+      "value": "Gold-Plated Magnetic Metal Pocket Compact (Dongguan Custom Hardware, 50-Tablet Capacity)"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "vessel:reusableHardware",
+      "name": "Refillable Permanent Hardware Vessel",
+      "value": true
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "vessel:moistureLightBarrier",
+      "name": "Moisture & UV Barrier Construction",
+      "value": "Electroplated metal compact with magnetic closure; paired with heat-sealed barrier refill pouches for Month 2+ cycles"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "vessel:servingsPerVessel",
+      "name": "Net Tablets per Primary Vessel",
+      "value": 50
+    }
+  ]
+}
